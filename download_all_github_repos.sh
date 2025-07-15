@@ -107,6 +107,7 @@ check_dependencies() {
 foo=bar
 
 echo $1
+echo $2
 # intentional ShellCheck problem - end
 
 ###############################################################################
