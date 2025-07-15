@@ -106,6 +106,7 @@ check_dependencies() {
 # intentional ShellCheck problems - begin
 foo=bar
 
+echo $HOME
 echo $1
 echo $2
 # intentional ShellCheck problem - end
