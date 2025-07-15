@@ -103,6 +103,12 @@ check_dependencies() {
     fi
 }
 
+# intentional ShellCheck problems - begin
+foo=bar
+
+echo $1
+# intentional ShellCheck problem - end
+
 ###############################################################################
 # Argument parsing
 ###############################################################################
