@@ -474,11 +474,11 @@ main() {
         exit 0
     fi
 
-    pushd "$DEST_DIR" >/dev/null
+    pushd $DEST_DIR >/dev/null
     clone_repos "${REPOS[@]}"
     popd >/dev/null
 
-    create_archive "$DEST_DIR" "$OUTPUT_TAR" "$COMPRESSION"
+    create_archive "$DEST_DIR" "$OUTPUT_TAR" $COMPRESSION
     sha256sum "$OUTPUT_TAR" > "$OUTPUT_TAR.sha256"
     info "SHA‑256 checksum written to $OUTPUT_TAR.sha256"
 
