@@ -1,0 +1,2 @@
+- name: Differential ShellCheck
+  uses: redhat-plumbers-in-action/differential-shellcheck@v5.5.4
